@@ -1,0 +1,33 @@
+<!-- شعار رفيق المتحرك — مكوّن مستقل (HTML + CSS فقط) -->
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&family=Cairo:wght@600&display=swap" rel="stylesheet">
+<style>
+.rafiq-logo{display:inline-flex;align-items:center;gap:20px;direction:rtl;text-decoration:none}
+.rafiq-logo svg{width:72px;height:72px;flex:none}
+.rafiq-logo .word{font-family:'Reem Kufi',sans-serif;font-weight:700;font-size:44px;line-height:1;color:#0E5A3F}
+.rafiq-logo .tag{font-family:Cairo,sans-serif;font-weight:600;font-size:13px;color:#8A6A1F;margin-top:4px}
+/* الحركة عند التحميل: الصفحتان تنفتحان ثم يظهر الرأسان ثم الكلمة */
+.rafiq-logo .pg{transform-box:fill-box;animation:rq-open .7s cubic-bezier(.2,.8,.2,1) both}
+.rafiq-logo .pg-r{transform-origin:left bottom}
+.rafiq-logo .pg-l{transform-origin:right bottom;animation-delay:.08s}
+.rafiq-logo .hd{transform-box:fill-box;transform-origin:center;animation:rq-pop .5s cubic-bezier(.3,1.5,.5,1) both}
+.rafiq-logo .hd-1{animation-delay:.55s}.rafiq-logo .hd-2{animation-delay:.68s}
+.rafiq-logo .txt{animation:rq-fade .6s ease-out .8s both}
+/* حركة خفيفة جدًا عند المرور: إيماءة الرأسين */
+.rafiq-logo:hover .hd-1{animation:rq-nod .6s ease-in-out}
+.rafiq-logo:hover .hd-2{animation:rq-nod .6s ease-in-out .1s}
+@keyframes rq-open{from{transform:scaleX(0);opacity:0}to{transform:scaleX(1);opacity:1}}
+@keyframes rq-pop{from{transform:scale(0)}to{transform:scale(1)}}
+@keyframes rq-fade{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+@keyframes rq-nod{0%,100%{transform:none}50%{transform:translateY(-4px)}}
+@media (prefers-reduced-motion:reduce){.rafiq-logo *{animation:none!important}}
+</style>
+<a class="rafiq-logo" href="/" aria-label="رفيق — الصفحة الرئيسية">
+  <svg viewBox="0 0 150 150" aria-hidden="true">
+    <rect x="5" y="5" width="140" height="140" rx="36" fill="#0E5A3F"/>
+    <path class="pg pg-r" d="M75 112 Q55 92 30 96 V70 Q55 66 75 86 Z" fill="#FFFFFF"/>
+    <path class="pg pg-l" d="M75 112 Q95 92 120 96 V70 Q95 66 75 86 Z" fill="#D9AE4E"/>
+    <circle class="hd hd-1" cx="57" cy="46" r="13" fill="#FFFFFF"/>
+    <circle class="hd hd-2" cx="93" cy="46" r="13" fill="#D9AE4E"/>
+  </svg>
+  <span class="txt"><div class="word">رفيق</div><div class="tag">إدارة مراكز تحفيظ القرآن الكريم</div></span>
+</a>

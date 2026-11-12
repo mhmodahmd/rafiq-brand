@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><rect width="1200" height="630" fill="#0E5A3F"/><g transform="translate(330 165)"><svg width="300" height="300" viewBox="0 0 150 150" aria-hidden="true">
+    <rect x="5" y="5" width="140" height="140" rx="36" fill="#0E5A3F"/>
+    <path class="pg pg-r" d="M75 112 Q55 92 30 96 V70 Q55 66 75 86 Z" fill="#FFFFFF"/>
+    <path class="pg pg-l" d="M75 112 Q95 92 120 96 V70 Q95 66 75 86 Z" fill="#D9AE4E"/>
+    <circle class="hd hd-1" cx="57" cy="46" r="13" fill="#FFFFFF"/>
+    <circle class="hd hd-2" cx="93" cy="46" r="13" fill="#D9AE4E"/>
+  </svg></g><text x="780" y="350" text-anchor="middle" font-family="Reem Kufi, sans-serif" font-weight="700" font-size="100" fill="#FFFFFF">رفيق</text></svg>
