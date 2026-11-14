@@ -1,0 +1,28 @@
+{
+ "name": "رفيق — مساحة المركز",
+ "short_name": "رفيق",
+ "description": "إدارة مراكز تحفيظ القرآن الكريم: الحلقات والحضور والحفظ والتقارير والمالية.",
+ "lang": "ar",
+ "dir": "rtl",
+ "id": "./",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "any",
+ "theme_color": "#0E5A3F",
+ "background_color": "#F7F5EF",
+ "icons": [
+  {
+   "src": "../brand/rafiq-pwa-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "../brand/rafiq-pwa-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  }
+ ]
+}
